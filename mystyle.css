@@ -1,0 +1,132 @@
+
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+.POLY{
+    font-family: 'Bowlby One SC';
+    opacity: 0;
+    color: #ff6666;
+    text-align: center;
+    animation: flash1 600ms 1;
+    animation-delay: .6s;
+}
+
+.EDO{
+    font-family: 'Bowlby One SC';
+    opacity: 0;
+    color: #f3f49e;
+    font-size: 600px;
+    animation: flash2 600ms 1;
+    animation-delay: 1.6s;
+    text-align: center;
+}
+
+.body1{
+    opacity: 1;
+    animation: body1 2.8s 1;
+    margin: 0 0 0 0;
+}
+
+@keyframes flash1 {
+    0%{
+        opacity: 1
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@keyframes flash2 {
+    0%{
+        opacity: 1
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@keyframes body1 {
+    0%{
+        opacity: 0
+    }
+    80%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+/* colors: lightblue:#a2cef3 red:#ff6666 yellow:#f3f49e green:#9dcc65 orange:#fc9c05 */
+
+.topbar {
+    height: 65px;
+    margin: 0 0 0 0;
+    margin-top: -35px;
+    padding-top: 5px;
+    background-color: #a2cef3;
+    z-index: 2;
+    position: relative;
+}
+
+.guitar {
+    margin: 0 0 0 0;
+    width:100%;
+    text-align: center;
+    position: relative;
+}
+@keyframes slightfade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .8;
+        margin-top: -5vh;
+    }
+}
+
+.btn {
+    opacity: 1;
+    transition: .2s;
+}
+.btn:hover {
+    opacity: .8;
+}
+
+.rowimg {
+    width: 30%;
+    margin-left:1%;
+    margin-right:1%;
+    transition: .2s;
+}
+.rowimg:hover {
+    transform: scale(1.05);
+}
+
+@keyframes leftp {
+    0% {
+        margin-left: -100%;
+        margin-right: 100%;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0px;
+        margin-right: 0px;
+        opacity: 1;
+    }
+
+}
+.pullleft {
+    animation: leftp 1.2s 1;
+    animation-delay: 4.4s;
+    position: absolute;
+    top: 12%;
+    text-align:center;
+    z-index: 2;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.guitgif {
+    width: 100%;
+    animation: slightfade .9s 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}

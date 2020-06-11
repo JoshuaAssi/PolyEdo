@@ -91,14 +91,6 @@
     text-align:center;
     margin: -21px 0 -22px 0 ;
 }
-
-.btn {
-    opacity: 1;
-    transition: .2s;
-}
-.btn:hover {
-    opacity: .8;
-}
 .container {
     background-color: inherit;
     padding: 0 0 0 0;
@@ -165,3 +157,33 @@
     bottom: 0;
     background: black;
 }
+
+#ltrap {
+    width: 58.9%;
+    height: 40vw;
+    background-image: url('musicp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+    position:relative
+  }
+  
+  #ltrap:hover {
+      opacity: .8;
+  }
+  #rtrap {
+    width: 58.8%;
+    height: 40vw;
+    background-image: url('videop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    position:absolute;
+    top:0;
+    right:0;
+    background-position:right;
+  }
+  
+  #rtrap:hover {
+      opacity: .8;
+  }

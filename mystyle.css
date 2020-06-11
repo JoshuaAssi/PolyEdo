@@ -7,16 +7,27 @@
     text-align: center;
     animation: flash1 600ms 1;
     animation-delay: .6s;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 35vw;
+    height: 100vh;
+    width:100vw;
 }
 
 .EDO{
     font-family: 'Bowlby One SC';
     opacity: 0;
     color: #f3f49e;
-    font-size: 600px;
     animation: flash2 600ms 1;
     animation-delay: 1.6s;
     text-align: center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 35vw;
+    height: 100vh;
+    width:100vw;
 }
 
 .body1{
@@ -30,56 +41,55 @@
         opacity: 1
     }
     100%{
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes flash2 {
     0%{
-        opacity: 1
+        opacity: 1;
     }
     100%{
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes body1 {
     0%{
-        opacity: 0
+        opacity: 0;
     }
     80%{
-        opacity: 0
+        opacity: 0;
     }
     100%{
-        opacity: 1
+        opacity: 1;
     }
 }
 /* colors: lightblue:#a2cef3 red:#ff6666 yellow:#f3f49e green:#9dcc65 orange:#fc9c05 */
 
-.topbar {
-    height: 65px;
-    margin: 0 0 0 0;
-    margin-top: -35px;
-    padding-top: 5px;
+.allb {
     background-color: #a2cef3;
-    z-index: 2;
-    position: relative;
+    margin: 0 0 0 0;
+    animation: bchange 2.8s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes bchange {
+    0%{
+        background-color: #a2cef3;
+    }
+    80%{
+        background-color: #a2cef3;
+    }
+    100%{
+        background-color: white;
+    }
 }
 
-.guitar {
-    margin: 0 0 0 0;
-    width:100%;
-    text-align: center;
+.topbar {
+    background-color: #a2cef3;
     position: relative;
-}
-@keyframes slightfade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .8;
-        margin-top: -5vh;
-    }
+    text-align:center;
+    margin: -21px 0 -22px 0 ;
 }
 
 .btn {
@@ -89,44 +99,69 @@
 .btn:hover {
     opacity: .8;
 }
-
-.rowimg {
-    width: 30%;
-    margin-left:1%;
-    margin-right:1%;
-    transition: .2s;
-}
-.rowimg:hover {
-    transform: scale(1.05);
+.container {
+    background-color: inherit;
+    padding: 0 0 0 0;
+    position: relative;
+    text-align: center;
 }
 
-@keyframes leftp {
-    0% {
-        margin-left: -100%;
-        margin-right: 100%;
-        opacity: 0;
-    }
-    100% {
-        margin-left: 0px;
-        margin-right: 0px;
-        opacity: 1;
-    }
+.himg {
+    width: 33.33%;
+    position: relative;
+    filter: grayscale(100%);
+    background:white;
+    transition: .4s;
+}
+.himg:hover {
+    filter: grayscale(0%);
+    background-color: #ff6666;
+    transition: .4s;
+}
+#him2:hover {
+    background-color: #f3f49e;
+}
 
+#him3:hover {
+    background-color: #a2cef3;
 }
-.pullleft {
-    animation: leftp 1.2s 1;
-    animation-delay: 4.4s;
-    position: absolute;
-    top: 12%;
-    text-align:center;
-    z-index: 2;
-    opacity: 0;
-    animation-fill-mode: forwards;
+#him4:hover {
+    background-color: #fc9c05;
 }
-.guitgif {
+#him5:hover {
+    background-color: #9dcc65;
+}
+#him6:hover {
+    background-color: rgb(246, 152, 255);
+}
+
+.smimg {
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px 10px 20px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 0 0 10px black;
+    transition: .1s;
+}
+
+.smimg:hover {
+    background-color: red;
+    box-shadow: 0 0 20px #ff2222;
+}
+
+#smimg2:hover {
+    background-color: rgb(225, 0, 255);
+    box-shadow: 0 0 20px #cc00ff;
+}
+#smimg3:hover {
+    background-color: hsl(207, 100%, 50%);
+    box-shadow: 0 0 20px #008cff;
+}
+
+#bottombar {
     width: 100%;
-    animation: slightfade .9s 1;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    opacity: 1;
+    bottom: 0;
+    background: black;
 }

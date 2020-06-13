@@ -96,6 +96,7 @@
     padding: 0 0 0 0;
     position: relative;
     text-align: center;
+    margin-bottom: -4px;
 }
 
 .himg {
@@ -152,6 +153,7 @@
     box-shadow: 0 0 20px #008cff;
 }
 
+
 #bottombar {
     width: 100%;
     bottom: 0;
@@ -161,7 +163,7 @@
 #ltrap {
     width: 58.9%;
     height: 40vw;
-    background-image: url('musicp.jpg');
+    background-image: url('uja.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
@@ -174,7 +176,7 @@
   #rtrap {
     width: 58.8%;
     height: 40vw;
-    background-image: url('videop.jpg');
+    background-image: url('janv.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);

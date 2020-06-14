@@ -110,6 +110,7 @@
     filter: grayscale(0%);
     background-color: #ff6666;
     transition: .4s;
+    cursor: pointer;
 }
 #him2:hover {
     background-color: #f3f49e;
@@ -142,6 +143,7 @@
 .smimg:hover {
     background-color: red;
     box-shadow: 0 0 20px #ff2222;
+    cursor: pointer;
 }
 
 #smimg2:hover {
@@ -172,6 +174,7 @@
   
   #ltrap:hover {
       opacity: .8;
+      cursor: pointer;
   }
   #rtrap {
     width: 58.8%;
@@ -188,4 +191,47 @@
   
   #rtrap:hover {
       opacity: .8;
+      cursor: pointer;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90vh;
+    height: 90vh;
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 5;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }

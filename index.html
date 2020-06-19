@@ -9,6 +9,18 @@
 
 <body class="allb">
 
+<script>
+var scrollToTop = window.setInterval(function() {
+    var pos = window.pageYOffset;
+    if ( pos > 0 ) {
+        window.scrollTo( 0, pos - 20 ); // how far to scroll on each step
+    } else {
+        window.clearInterval( scrollToTop );
+    }
+}, 5);
+</script>
+ 
+
 <div>
     <span class="POLY">POLY</span>
     <div style="width: 100%">
@@ -16,10 +28,12 @@
 </div>
 <div class="body1">
     <div class="topbar">
-        <h1>
+        <img src="headert.png" alt="polyedo" class="headert">
+        <!--<h1>
             <span style="color:#ff6666;font-size:45px;font-family:'Bowlby One SC'">Poly</span>
             <span style="color:#f3f49e;font-size:45px;font-family:'Bowlby One SC'">Edo</span>
-        </h1>
+        </h1>-->
+        <img src="shcart.png" alt="Shopping Cart" id="shcart">
     </div>
     <div style="position:relative;">
         <div id="ltrap"></div><!--
@@ -40,7 +54,7 @@
     </div>
     <div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 90px;text-align:center;position:relative;"><img src="plogo.png" alt="polyedo logo" style="border-radius: 50%;position:relative;height: 60px;width:60px;top: 18%;"></div>
     <div class="container" id="bottombar">
-        <img src="youc.png" alt="youtube" class="smimg">
+        <a href="https://www.youtube.com/channel/UCYkBz1xXhDemk4vol0klOUg"><img src="youc.png" alt="youtube" class="smimg"></a>
         <a href="https://www.instagram.com/poly3do/?hl=en"><img src="instac.png" alt="instagram" class="smimg" id="smimg2"></a>
         <a href="https://twitter.com/poly3do"><img src="twitc.png" alt="twitter" class="smimg" id="smimg3"></a>
     </div>
@@ -48,7 +62,26 @@
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <img src="urv1.png" class="innerpic" alt="WoahVish">
+            <div class="sidename">WoahVish</div>
+            <div class="brshcart"><span class="atc">Add To Cart</span><img src="incart.png" alt="shopping cart" class="brincart" title="Add To Cart" id="wvshcart"></div>
+            <div style="bottom: 0;left:0;height:17%;width:83%;background-color:#f3f49e;position:absolute;text-align:center;">
+                <button class="sizeb" id="wvsbutton">S</button><!--
+                --><button class="sizeb" id="wvmbutton">M</button><!--
+                --><button class="sizeb" id="wvlbutton">L</button><!--
+                --><button class="sizeb" id="wvxlbutton">XL</button><!--
+                --><button class="sizeb" id="wvebutton">B</button>
+            <div class="qtybox">
+                <p style="position:relative;top: -15px;">Quantity:</p>
+                <button class="qupb" id="wvqupb">
+                    &#9650;
+                </button>
+                <p class="qnum" id="wvqnum">1</p>
+                <button class="qdownb" id="wvqdownb">
+                    &#9660;
+                </button>
+            </div>
+            </div>
         </div>
     </div>
     <div id="modal2" class="modal">
@@ -79,6 +112,47 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="shmodal" class="modal">
+        <div class="modal-content" id="shmodal-content">
+            <span class="close">&times;</span>
+            <h1 id="chead">Your Cart</h1>
+            <span id="nothing">There is Nothing In Your Cart<br><br></span>
+            <div class="shbox" id="shbox1">
+                <img src="urv1.png" alt="wv" class="shpic" id="shwvpic">
+                <span class="itemhead" id="item1size"></span>
+                <span class="itemqline" id="item1q"></span>
+                <span class="itemcancel" id="cancel1">&times;</span>
+            </div>
+            <div class="shbox" id="shbox2">
+                <img src="urv1.png" alt="wv" class="shpic" id="shwvpic2">
+                <span class="itemhead" id="item2size"></span>
+                <span class="itemqline" id="item2q"></span>
+                <span class="itemcancel" id="cancel2">&times;</span>
+            </div>
+            <div class="shbox" id="shbox3">
+                <img src="urv1.png" alt="wv" class="shpic" id="shwvpic3">
+                <span class="itemhead" id="item3size"></span>
+                <span class="itemqline" id="item3q"></span>
+                <span class="itemcancel" id="cancel3">&times;</span>
+            </div>
+            <div class="shbox" id="shbox4">
+                <img src="urv1.png" alt="wv" class="shpic" id="shwvpic4">
+                <span class="itemhead" id="item4size"></span>
+                <span class="itemqline" id="item4q"></span>
+                <span class="itemcancel" id="cancel4">&times;</span>
+            </div>
+            <div class="shbox" id="shbox5">
+                <img src="urv1.png" alt="wv" class="shpic" id="shwvpic5">
+                <span class="itemhead" id="item5size"></span>
+                <span class="itemqline" id="item5q"></span>
+                <span class="itemcancel" id="cancel5">&times;</span>
+            </div>
+            <div id="checkbar">
+                <button id="checkbutton">Proceed To Checkout</button>
+            </div>
+            
         </div>
     </div>
 </div>

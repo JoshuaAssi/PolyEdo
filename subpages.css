@@ -1,0 +1,117 @@
+
+
+.topbox {
+    width: 2000px;
+    height: 1000px;
+    background-color: black;
+    position: relative;
+}
+
+@keyframes guitpull {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -110px;
+    }
+}
+#guit {
+    animation: guitpull .7s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+
+.artpic {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes pullin {
+    0% {
+        opacity: 0;
+        bottom: -8vw;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+.uptitle {
+    position: fixed;
+    height: 8vw;
+    bottom: -8vw;
+    width: 100%;
+    font-size: 9.9vw;
+    font-family: Bowlby One SC;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+    animation: pullin .7s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+.othertitle {
+    position: fixed;
+    height: 8vw;
+    bottom: 0;
+    width: 100%;
+    font-size: 9.9vw;
+    font-family: Bowlby One SC;
+    text-align: center;
+    color: white;
+    background-color: black;
+    z-index: 1;
+}
+
+.pagetitle {
+    position: relative;
+    top: -3.2vw;
+}
+
+.fullbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+.fullbox:hover {
+    cursor: pointer;
+}
+
+.logobutton {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+    background-color: blue;
+    filter: grayscale(100%);
+    transition: .2s;
+}
+.logobutton:hover {
+    background-color: white;
+    filter: grayscale(0);
+    box-shadow: 0 0 30px white;
+}
+
+
+#ethtab {
+    display: none;
+    left: 100vw;
+}
+
+
+#jantab {
+    display: none;
+    left: 100vw;
+}

@@ -1,5 +1,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+a {
+    text-decoration: none;
+}
 .POLY{
     font-family: 'Bowlby One SC';
     opacity: 0;
@@ -89,7 +93,7 @@
     background-color: #a2cef3;
     position: relative;
     text-align:center;
-    margin: -5px 0 -10px 0;
+    margin: 0px 0 -5px 0;
 }
 .container {
     background-color: inherit;
@@ -98,6 +102,7 @@
     text-align: center;
     margin-bottom: -4px;
 }
+
 
 .himg {
     width: 33.33%;
@@ -117,7 +122,7 @@
 }
 
 #him3:hover {
-    background-color: #a2cef3;
+    background-color: rgb(246, 152, 255);
 }
 #him4:hover {
     background-color: #fc9c05;
@@ -126,17 +131,16 @@
     background-color: #9dcc65;
 }
 #him6:hover {
-    background-color: rgb(246, 152, 255);
+    background-color: #a2cef3;
 }
 
 .smimg {
-    width: 70px;
-    height: 70px;
-    margin: 10px 20px 10px 20px;
+    width: 55px;
+    height: 55px;
+    margin: 3px 21px 0 15px;
     bottom: 0;
     border-radius: 50%;
     background-color: rgb(56, 56, 56);
-    box-shadow: 0 0 10px black;
     transition: .1s;
 }
 
@@ -154,11 +158,15 @@
     box-shadow: 0 0 20px #008cff;
 }
 
-
-#bottombar {
+.bottombar {
+    position: absolute;
     width: 100%;
-    bottom: 0;
-    background: black;
+    background-color: black;
+    text-align: right;
+    clip-path: polygon(83% 0, 100% 0, 100% 100%, 83% 100%, 84% 50%);
+    height: 60px;
+    margin-top: -1px;
+    overflow: hidden;
 }
 
 #ltrap {
@@ -402,8 +410,8 @@ button:focus {
     font-family: Bowlby One SC;
     color: black;
     top: 0;
-    left: 14vh;
-    font-size: 4vh;
+    left: 13vh;
+    font-size: 3vh;
 }
 .itemqline {
     position: relative;
@@ -412,25 +420,26 @@ button:focus {
     margin: 0 0 0 0;
     color: black;
     bottom: 1vh;
+    font-style: italic;
 }
 
 
 .shpic {
     position: relative;
-    height: 13vh;
-    width: 13vh;
+    height: 12vh;
+    width: 12vh;
     top: 0;
     left: 0;
     margin: 0 0 0 0;
+    background-color: #a2cef3;
 }
 .shbox {
     background-color: #a2cef3;
     position: relative;
     margin: 0 1vh 1vh 1vh;
     width: 97.5%;
-    height:14vh;
+    height:12vh;
     display: none;
-    
 }
 .itemcancel {
     position: absolute;
@@ -476,4 +485,35 @@ button:focus {
     font-size: 3vh;
     font-family: Bowlby one SC;
     position: relative;
+}
+.iprice {
+    position: absolute;
+    bottom: 0;
+    right: 1vh;
+    font-family: Bowlby One SC;
+    font-size: 3vh;
+}
+
+#totalitems {
+    position: absolute;
+    left: 4vh;
+    top: 1vh;
+    color: black;
+    font-family: Bowlby One SC;
+    font-size: 3vh;
+}
+#totalprice {
+    position: absolute;
+    right: 1.5vh;
+    top: 1vh;
+    color: black;
+    font-family: Bowlby One SC;
+    font-size: 2.7vh;
+}
+.plogo {
+    border-radius: 50%;
+    position: relative;
+    height: 49px;
+    width: 49px;
+    top: 9%;
 }

@@ -41,7 +41,9 @@ var scrollToTop = window.setInterval(function() {
         <h1 style="bottom:0px;margin: 0 0 0 0;font-size:5vw;left:10px;color:white;position:absolute;font-family:'Bowlby One SC';z-index:2;">Artists</h1>
         <h1 style="top:0px;margin: 0 0 0 0;font-size:5vw;right:10px;color:white;position:absolute;z-index:3;font-family:'Bowlby One SC'">Video Production</h1>
     </div>
-    <div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 90px;text-align:center;position:relative;"><img src="plogo.png" alt="polyedo logo" style="border-radius: 50%;position:relative;height: 60px;width:60px;top: 18%;"></div>
+    <div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 60px;text-align:center;position:relative;">
+        <img src="plogo.png" alt="polyedo logo" class="plogo">
+    </div>
     <div class="container">
         <img src="urv1.png" alt="polo" class="himg" id="him1"><!--
         --><img src="urv1.png" alt="polo" class="himg" id="him2"><!--
@@ -52,12 +54,32 @@ var scrollToTop = window.setInterval(function() {
         --><img src="urv1.png" alt="polo" class="himg" id="him5"><!--
         --><img src="urv1.png" alt="polo" class="himg" id="him6">
     </div>
-    <div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 90px;text-align:center;position:relative;"><img src="plogo.png" alt="polyedo logo" style="border-radius: 50%;position:relative;height: 60px;width:60px;top: 18%;"></div>
-    <div class="container" id="bottombar">
-        <a href="https://www.youtube.com/channel/UCYkBz1xXhDemk4vol0klOUg"><img src="youc.png" alt="youtube" class="smimg"></a>
-        <a href="https://www.instagram.com/poly3do/?hl=en"><img src="instac.png" alt="instagram" class="smimg" id="smimg2"></a>
-        <a href="https://twitter.com/poly3do"><img src="twitc.png" alt="twitter" class="smimg" id="smimg3"></a>
-    </div>
+    <!--<div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 60px;text-align:center;position:relative;">
+        <img src="plogo.png" alt="polyedo logo" style="border-radius: 50%;position:relative;height: 49px;width:49px;top: 9%;">
+    </div>-->
+    <footer class="bottombar">
+        <a href="https://www.youtube.com/channel/UCYkBz1xXhDemk4vol0klOUg">
+            <img src="youc.png" alt="youtube" class="smimg">
+        </a>
+        <a href="https://www.instagram.com/poly3do/?hl=en">
+            <img src="instac.png" alt="instagram" class="smimg" id="smimg2">
+        </a>
+        <a href="https://twitter.com/poly3do">
+            <img src="twitc.png" alt="twitter" class="smimg" id="smimg3">
+        </a>
+    </footer>
+    <footer class="bottombar" style="clip-path: polygon(54% 0, 0 0, 0 100%, 54% 100%, 55% 50%);background-color: #a2cef3;text-align: left;">
+        <img src="plogo.png" alt="polyedo logo" class="plogo" style="left: 10px;">
+        <div style="overflow: hidden;height: 80px;width: 100%;bottom: 0;position: absolute;left: 0;margin: 0 0 0 0;">
+            <span style="left: 70px; font-family: Bowlby One Sc; font-size: 70px;position: absolute;color: #ff6666;top: -2px;">
+                Poly<span style="color: #f3f49e">Edo</span>
+            </span>
+        </div>
+    </footer>
+    <footer class="bottombar" style="clip-path: polygon(74% 0, 54% 0, 55% 50%, 54% 100%, 74% 100%, 75% 50%);;background-color: #ff6666;">
+    </footer>
+    <footer class="bottombar" style="clip-path: polygon(83% 0, 74% 0, 75% 50%, 74% 100%, 83% 100%, 84% 50%);;background-color: #f3f49e;">
+    </footer>
     <!-- Modals -->
     <div id="modal1" class="modal">
         <div class="modal-content">

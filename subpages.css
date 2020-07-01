@@ -94,7 +94,6 @@
     top: 30px;
     left: 30px;
     z-index: 5;
-    background-color: blue;
     filter: grayscale(100%);
     transition: .2s;
 }
@@ -109,9 +108,119 @@
     display: none;
     left: 100vw;
 }
-
-
 #jantab {
     display: none;
     left: 100vw;
+}
+.fullcont {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.third {
+    transition: 16s;
+    transition-timing-function: linear;
+}
+.third:hover {
+    filter: hue-rotate(720deg);
+    transition: 4s;
+    transition-timing-function: linear;
+}
+#third1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-image: url('videowork.JPG');
+    background-size: 2000px 1000px;
+    clip-path: polygon(0 25%, 0 0, 100% 0);
+}
+
+#third2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-image: url('videowork.JPG');
+    background-size: 2000px 1000px;
+    clip-path: polygon(0 25%, 100% 0, 100% 50%);
+}
+
+#third3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-image: url('videowork.JPG');
+    background-size: 2000px 1000px;
+    clip-path: polygon(0 25%, 0 75%, 100% 50%);
+}
+#third4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-image: url('videowork.JPG');
+    background-size: 2000px 1000px;
+    clip-path: polygon(100% 100%, 0 75%, 100% 50%);
+}
+#third5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    clip-path: polygon(0 75%, 100% 90%, 100% 100%, 0% 100%);
+}
+.youthird {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(73% 86%, 100% 90%, 100% 100%, 70% 100%);
+    background-color: rgb(31, 31, 31);
+    overflow: visible;
+    transition: .3s;
+}
+.youthird:hover {
+    background-color: red;
+}
+.youthirdtitle {
+    color: black;
+    font-size: 4vw;
+    font-family: Bowlby One SC;
+    position: absolute;
+    bottom: 2px;
+    right: 5vw;
+}
+.vtitle {
+    font-family: Bowlby One SC;
+    font-size: 150px;
+    color: #ff6666;
+    bottom: 10vh;
+    position: absolute;
+    max-width: 100%;
+}
+.vmessage {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-family: Muli;
+    color: white;
+    font-size: 28px;
+    width: 70vw;
 }

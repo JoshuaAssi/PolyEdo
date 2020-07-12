@@ -1,4 +1,11 @@
     
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("openerbox").style = "display:none;";
+        document.getElementsByClassName("body1")[0].style="overflow-y:auto;";
+      }, 2900)
+    };
+    
     // Get the modal
     let modal1 = document.getElementById("modal1");
     let modal2 = document.getElementById("modal2");
@@ -100,72 +107,130 @@ shcloser.onclick = function() {
     }
 
 //sizebuttons
-let wvsb = document.getElementById("wvsbutton");
-let wvmb = document.getElementById("wvmbutton");
-let wvlb = document.getElementById("wvlbutton");
-let wvxlb = document.getElementById("wvxlbutton");
+let m1sb = document.getElementById("m1sbutton");
+let m1mb = document.getElementById("m1mbutton");
+let m1lb = document.getElementById("m1lbutton");
+let m1xlb = document.getElementById("m1xlbutton");
 
-let wvsval = 0;
-let wvmval = 0;
-let wvlval = 0;
-let wvxlval = 0;
+let m1sval = 0;
+let m1mval = 0;
+let m1lval = 0;
+let m1xlval = 0;
 
 
 //size buttons color and value changes
-wvsbutton.onclick = function(event) {
-    wvsb.style.background= "#ff6666";
-    wvlb.style.background="#f3f49e";
-    wvxlb.style.background="#f3f49e";
-    wvmb.style.background="#f3f49e";
-    wvsval = 1;
-    wvmval = 0;
-    wvlval = 0;
-    wvxlval = 0;
+m1sbutton.onclick = function(event) {
+    m1sb.style.background= "#ff6666";
+    m1lb.style.background="#f3f49e";
+    m1xlb.style.background="#f3f49e";
+    m1mb.style.background="#f3f49e";
+    m1sval = 1;
+    m1mval = 0;
+    m1lval = 0;
+    m1xlval = 0;
 }
-wvmbutton.onclick = function(event) {
-    wvsb.style.background= "#f3f49e";
-    wvmb.style.background="#ff6666";
-    wvlb.style.background="#f3f49e";
-    wvxlb.style.background="#f3f49e";
-    wvsval = 0;
-    wvmval = 1;
-    wvlval = 0;
-    wvxlval = 0;
+m1mbutton.onclick = function(event) {
+    m1sb.style.background= "#f3f49e";
+    m1mb.style.background="#ff6666";
+    m1lb.style.background="#f3f49e";
+    m1xlb.style.background="#f3f49e";
+    m1sval = 0;
+    m1mval = 1;
+    m1lval = 0;
+    m1xlval = 0;
     
 }
-wvlbutton.onclick = function(event) {
-    wvsb.style.background= "#f3f49e";
-    wvmb.style.background="#f3f49e";
-    wvlb.style.background="#ff6666";
-    wvxlb.style.background="#f3f49e";
-    wvsval = 0;
-    wvmval = 0;
-    wvlval = 1;
-    wvxlval = 0;
+m1lbutton.onclick = function(event) {
+    m1sb.style.background= "#f3f49e";
+    m1mb.style.background="#f3f49e";
+    m1lb.style.background="#ff6666";
+    m1xlb.style.background="#f3f49e";
+    m1sval = 0;
+    m1mval = 0;
+    m1lval = 1;
+    m1xlval = 0;
 }
-wvxlbutton.onclick = function(event) {
-    wvsb.style.background= "#f3f49e";
-    wvmb.style.background="#f3f49e";
-    wvlb.style.background="#f3f49e";
-    wvxlb.style.background="#ff6666";
-    wvsval = 0;
-    wvmval = 0;
-    wvlval = 0;
-    wvxlval = 1;
+m1xlbutton.onclick = function(event) {
+    m1sb.style.background= "#f3f49e";
+    m1mb.style.background="#f3f49e";
+    m1lb.style.background="#f3f49e";
+    m1xlb.style.background="#ff6666";
+    m1sval = 0;
+    m1mval = 0;
+    m1lval = 0;
+    m1xlval = 1;
 }
 
-let wvqupb = document.getElementById("wvqupb");
-let wvqdownb = document.getElementById("wvqdownb");
-let wvqnum = document.getElementById("wvqnum");
+let m2sb = document.getElementById("m2sbutton");
+let m2mb = document.getElementById("m2mbutton");
+let m2lb = document.getElementById("m2lbutton");
+let m2xlb = document.getElementById("m2xlbutton");
+
+let m2sval = 0;
+let m2mval = 0;
+let m2lval = 0;
+let m2xlval = 0;
+//size buttons color and value changes
+m2sbutton.onclick = function(event) {
+    m2sb.style.background= "#ff6666";
+    m2lb.style.background="#f3f49e";
+    m2xlb.style.background="#f3f49e";
+    m2mb.style.background="#f3f49e";
+    m2sval = 1;
+    m2mval = 0;
+    m2lval = 0;
+    m2xlval = 0;
+}
+m2mbutton.onclick = function(event) {
+    m2sb.style.background= "#f3f49e";
+    m2mb.style.background="#ff6666";
+    m2lb.style.background="#f3f49e";
+    m2xlb.style.background="#f3f49e";
+    m2sval = 0;
+    m2mval = 1;
+    m2lval = 0;
+    m2xlval = 0;
+    
+}
+m2lbutton.onclick = function(event) {
+    m2sb.style.background= "#f3f49e";
+    m2mb.style.background="#f3f49e";
+    m2lb.style.background="#ff6666";
+    m2xlb.style.background="#f3f49e";
+    m2sval = 0;
+    m2mval = 0;
+    m2lval = 1;
+    m2xlval = 0;
+}
+m2xlbutton.onclick = function(event) {
+    m2sb.style.background= "#f3f49e";
+    m2mb.style.background="#f3f49e";
+    m2lb.style.background="#f3f49e";
+    m2xlb.style.background="#ff6666";
+    m2sval = 0;
+    m2mval = 0;
+    m2lval = 0;
+    m2xlval = 1;
+}
+
 let nothing = document.getElementById("nothing");
-let wvqval = 1; //underneath quantity, qnum is display
 
-let wvprice = 20.00; //price of wv item
+let m1qupb = document.getElementById("m1qupb");
+let m1qdownb = document.getElementById("m1qdownb");
+let m1qnum = document.getElementById("m1qnum");
+let m1qval = 1; //underneath quantity, qnum is display
+let m1price = 20.00; //price of m1 item
+
+let m2qupb = document.getElementById("m2qupb");
+let m2qdownb = document.getElementById("m2qdownb");
+let m2qnum = document.getElementById("m2qnum");
+let m2qval = 1; //underneath quantity, qnum is display
+let m2price = 20.00; //price of m2 item
 
 let $q1 = 1; //final q of item 1
-let $size1; //final size of i1
+let $size1; //final size of m1
 let $item1 = 0; //1: item in slot, 0: none
-let $price1 = 0; //final price of i1
+let $price1 = 0; //final price of m1
 
 let $q2 = 1;
 let $size2;
@@ -192,30 +257,41 @@ let $totalprice = document.getElementById("totalprice");
 let $intprice = 0;
 
 //up button upincs q if q<20, down downincs q if q>1
-wvqupb.onclick = function(event) {
-  if (wvqval<20) {
-    wvqval++;
+m1qupb.onclick = function(event) {
+  if (m1qval<20) {
+    m1qval++;
   }
-  wvqnum.innerHTML=wvqval;
+  m1qnum.innerHTML=m1qval;
 }
-wvqdownb.onclick = function(event) {
-  if (wvqval>1) {
-    wvqval --;
+m1qdownb.onclick = function(event) {
+  if (m1qval>1) {
+    m1qval --;
   }
-  wvqnum.innerHTML=wvqval;
+  m1qnum.innerHTML=m1qval;
+}
+m2qupb.onclick = function(event) {//m2
+  if (m2qval<20) {
+    m2qval++;
+  }
+  m2qnum.innerHTML=m2qval;
+}
+m2qdownb.onclick = function(event) {
+  if (m2qval>1) {
+    m2qval --;
+  }
+  m2qnum.innerHTML=m2qval;
 }
 
-
-//when wv cart is clicked:
-let wvshcart = document.getElementById("wvshcart");
-wvshcart.onclick = function() {
+//when m1 cart is clicked:
+let m1shcart = document.getElementById("m1shcart");
+m1shcart.onclick = function() {
   if ($item1 + $item2 + $item3 + $item4 + $item5 == 5) { //all occupied
     alert("Your Cart is Full");
   }
-  if ($item1 + $item2 + $item3 + $item4 == 4) { //i1 through i4 are occupied
+  if ($item1 + $item2 + $item3 + $item4 == 4) { //m1 through i4 are occupied
     if ($item5 == 0) { //i5 is available
-      if (wvsval == 1) { //add wv values to i5
-        $q5 = wvqval;
+      if (m1sval == 1) { //add m1 values to i5
+        $q5 = m1qval;
         $size5 = "Small";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
@@ -225,8 +301,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item5 = 1;
       }
-      if (wvmval == 1) {
-        $q5 = wvqval;
+      if (m1mval == 1) {
+        $q5 = m1qval;
         $size5 = "Medium";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
@@ -236,8 +312,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item5 = 1;
       }
-      if (wvlval == 1) {
-        $q5 = wvqval;
+      if (m1lval == 1) {
+        $q5 = m1qval;
         $size5 = "Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
@@ -247,8 +323,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item5 = 1;
       }
-      if (wvxlval == 1) {
-        $q5 = wvqval;
+      if (m1xlval == 1) {
+        $q5 = m1qval;
         $size5 = "Extra Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
@@ -258,14 +334,14 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item5 = 1;
       }
-      $price5 = $q5 * wvprice;
+      $price5 = $q5 * m1price;
       document.getElementById("$price5").innerHTML = "$" + $price5;
     }
   }
   if ($item1 + $item2 + $item3 == 3) { //i1, i2, and i3 are occupied
     if ($item4 == 0) { //check if i4 is available
-      if (wvsval == 1) { //add wv values to i4
-        $q4 = wvqval;
+      if (m1sval == 1) { //add m1 values to i4
+        $q4 = m1qval;
         $size4 = "Small";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
@@ -275,8 +351,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item4 = 1;
       }
-      if (wvmval == 1) {
-        $q4 = wvqval;
+      if (m1mval == 1) {
+        $q4 = m1qval;
         $size4 = "Medium";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
@@ -286,8 +362,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item4 = 1;
       }
-      if (wvlval == 1) {
-        $q4 = wvqval;
+      if (m1lval == 1) {
+        $q4 = m1qval;
         $size4 = "Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
@@ -297,8 +373,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item4 = 1;
       }
-      if (wvxlval == 1) {
-        $q4 = wvqval;
+      if (m1xlval == 1) {
+        $q4 = m1qval;
         $size4 = "Extra Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
@@ -308,14 +384,14 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item4 = 1;
       }
-      $price4 = $q4 * wvprice;
+      $price4 = $q4 * m1price;
       document.getElementById("$price4").innerHTML = "$" + $price4;
     }
   }
-  if ($item1 + $item2 == 2) { //i1 and i2 are occupied
+  if ($item1 + $item2 == 2) { //m1 and m2 are occupied
     if ($item3 == 0) { //check if i3 is available
-      if (wvsval == 1) { //add wv values to i3
-        $q3 = wvqval;
+      if (m1sval == 1) { //add m1 values to i3
+        $q3 = m1qval;
         $size3 = "Small";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
@@ -325,8 +401,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item3 = 1;
       }
-      if (wvmval == 1) {
-        $q3 = wvqval;
+      if (m1mval == 1) {
+        $q3 = m1qval;
         $size3 = "Medium";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
@@ -336,8 +412,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item3 = 1;
       }
-      if (wvlval == 1) {
-        $q3 = wvqval;
+      if (m1lval == 1) {
+        $q3 = m1qval;
         $size3 = "Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
@@ -347,8 +423,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item3 = 1;
       }
-      if (wvxlval == 1) {
-        $q3 = wvqval;
+      if (m1xlval == 1) {
+        $q3 = m1qval;
         $size3 = "Extra Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
@@ -358,14 +434,14 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item3 = 1;
       }
-      $price3 = $q3 * wvprice;
+      $price3 = $q3 * m1price;
       document.getElementById("$price3").innerHTML = "$" + $price3;
     }
   }
-  if ($item1 == 1) { //i1 is occupied
-    if ($item2 == 0) { //checks if i2 is available
-      if (wvsval == 1) { //add wv values to i2
-        $q2 = wvqval;
+  if ($item1 == 1) { //m1 is occupied
+    if ($item2 == 0) { //checks if m2 is available
+      if (m1sval == 1) { //add m1 values to m2
+        $q2 = m1qval;
         $size2 = "Small";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
@@ -375,8 +451,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item2 = 1;
       }
-      if (wvmval == 1) {
-        $q2 = wvqval;
+      if (m1mval == 1) {
+        $q2 = m1qval;
         $size2 = "Medium";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
@@ -386,8 +462,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item2 = 1;
       }
-      if (wvlval == 1) {
-        $q2 = wvqval;
+      if (m1lval == 1) {
+        $q2 = m1qval;
         $size2 = "Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
@@ -397,8 +473,8 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item2 = 1;
       }
-      if (wvxlval == 1) {
-        $q2 = wvqval;
+      if (m1xlval == 1) {
+        $q2 = m1qval;
         $size2 = "Extra Large";
         document.getElementById("nothing").style="display:none";
         document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
@@ -408,13 +484,13 @@ wvshcart.onclick = function() {
       document.getElementById("modal1").style="display:none";
       $item2 = 1;
       }
-      $price2 = $q2 * wvprice;
+      $price2 = $q2 * m1price;
       document.getElementById("$price2").innerHTML = "$" + $price2;
     }
   }
-  if ($item1 == 0) { //i1 is available
-    if (wvsval == 1) { //add wv values to i1
-    $q1 = wvqval;
+  if ($item1 == 0) { //m1 is available
+    if (m1sval == 1) { //add m1 values to m1
+    $q1 = m1qval;
     $size1 = "Small";
     document.getElementById("nothing").style="display:none";
     document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
@@ -422,10 +498,10 @@ wvshcart.onclick = function() {
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal1").style="display:none";
-  $item1 = 1; //i1 is occupied
+  $item1 = 1; //m1 is occupied
   }
-  if (wvmval == 1) {
-    $q1 = wvqval;
+  if (m1mval == 1) {
+    $q1 = m1qval;
     $size1 = "Medium";
     document.getElementById("nothing").style="display:none";
     document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
@@ -435,8 +511,8 @@ wvshcart.onclick = function() {
   document.getElementById("modal1").style="display:none";
   $item1 = 1;
   }
-  if (wvlval == 1) {
-    $q1 = wvqval;
+  if (m1lval == 1) {
+    $q1 = m1qval;
     $size1 = "Large";
     document.getElementById("nothing").style="display:none";
     document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
@@ -446,8 +522,8 @@ wvshcart.onclick = function() {
   document.getElementById("modal1").style="display:none";
   $item1 = 1;
   }
-  if (wvxlval == 1) {
-    $q1 = wvqval;
+  if (m1xlval == 1) {
+    $q1 = m1qval;
     $size1 = "Extra Large";
     document.getElementById("nothing").style="display:none";
     document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
@@ -457,10 +533,276 @@ wvshcart.onclick = function() {
   document.getElementById("modal1").style="display:none";
   $item1 = 1; 
   }
-  $price1 = $q1 * wvprice;
+  $price1 = $q1 * m1price;
       document.getElementById("$price1").innerHTML = "$" + $price1;
   }
-  if (wvsval + wvmval + wvlval + wvxlval == 0) { //if no size is selected: alert
+  if (m1sval + m1mval + m1lval + m1xlval == 0) { //if no size is selected: alert
+    alert("Please select a size");
+  }
+  if ($q1 * $item1 + $q2 * $item2 + $q3 * $item3 + $q4 * $item4 + $q5 * $item5 == 1) { //qs only added if their corresponding i is occupied, rest terms == 0 and are not counted
+    $totalitems.innerHTML = $q1 * $item1 + $q2 * $item2 + $q3 * $item3 + $q4 * $item4 + $q5 * $item5 + " item";
+  }
+  else {
+    $totalitems.innerHTML = $q1 * $item1 + $q2 * $item2 + $q3 * $item3 + $q4 * $item4 + $q5 * $item5 + " items";
+  }
+  $intprice = $price1 * $item1 + $price2 * $item2 + $price3 * $item3 + $price4 * $item4 + $price5 * $item5;
+  $totalprice.innerHTML = "Total: $" + $intprice;
+}
+//when m2 cart is clicked:
+let m2shcart = document.getElementById("m2shcart");
+m2shcart.onclick = function() {
+  if ($item1 + $item2 + $item3 + $item4 + $item5 == 5) { //all occupied
+    alert("Your Cart is Full");
+  }
+  if ($item1 + $item2 + $item3 + $item4 == 4) { //i1 through i4 are occupied
+    if ($item5 == 0) { //i5 is available
+      if (m2sval == 1) { //add m2 values to i5
+        $q5 = m2qval;
+        $size5 = "Small";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+      document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
+      document.getElementById("shbox5").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item5 = 1;
+      }
+      if (m2mval == 1) {
+        $q5 = m2qval;
+        $size5 = "Medium";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+      document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
+      document.getElementById("shbox5").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item5 = 1;
+      }
+      if (m2lval == 1) {
+        $q5 = m2qval;
+        $size5 = "Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+      document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
+      document.getElementById("shbox5").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item5 = 1;
+      }
+      if (m2xlval == 1) {
+        $q5 = m2qval;
+        $size5 = "Extra Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+      document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
+      document.getElementById("shbox5").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item5 = 1;
+      }
+      $price5 = $q5 * m2price;
+      document.getElementById("$price5").innerHTML = "$" + $price5;
+    }
+  }
+  if ($item1 + $item2 + $item3 == 3) { //i1, i2, and i3 are occupied
+    if ($item4 == 0) { //check if i4 is available
+      if (m2sval == 1) { //add m2 values to i4
+        $q4 = m2qval;
+        $size4 = "Small";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+      document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
+      document.getElementById("shbox4").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item4 = 1;
+      }
+      if (m2mval == 1) {
+        $q4 = m2qval;
+        $size4 = "Medium";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+      document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
+      document.getElementById("shbox4").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item4 = 1;
+      }
+      if (m2lval == 1) {
+        $q4 = m2qval;
+        $size4 = "Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+      document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
+      document.getElementById("shbox4").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item4 = 1;
+      }
+      if (m2xlval == 1) {
+        $q4 = m2qval;
+        $size4 = "Extra Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+      document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
+      document.getElementById("shbox4").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item4 = 1;
+      }
+      $price4 = $q4 * m2price;
+      document.getElementById("$price4").innerHTML = "$" + $price4;
+    }
+  }
+  if ($item1 + $item2 == 2) { //i1 and i2 are occupied
+    if ($item3 == 0) { //check if i3 is available
+      if (m2sval == 1) { //add m2 values to i3
+        $q3 = m2qval;
+        $size3 = "Small";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+      document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
+      document.getElementById("shbox3").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item3 = 1;
+      }
+      if (m2mval == 1) {
+        $q3 = m2qval;
+        $size3 = "Medium";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+      document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
+      document.getElementById("shbox3").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item3 = 1;
+      }
+      if (m2lval == 1) {
+        $q3 = m2qval;
+        $size3 = "Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+      document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
+      document.getElementById("shbox3").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item3 = 1;
+      }
+      if (m2xlval == 1) {
+        $q3 = m2qval;
+        $size3 = "Extra Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+      document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
+      document.getElementById("shbox3").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item3 = 1;
+      }
+      $price3 = $q3 * m2price;
+      document.getElementById("$price3").innerHTML = "$" + $price3;
+    }
+  }
+  if ($item1 == 1) { //i1 is occupied
+    if ($item2 == 0) { //checks if i2 is available
+      if (m2sval == 1) { //add m2 values to i2
+        $q2 = m2qval;
+        $size2 = "Small";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+      document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
+      document.getElementById("shbox2").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item2 = 1;
+      }
+      if (m2mval == 1) {
+        $q2 = m2qval;
+        $size2 = "Medium";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+      document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
+      document.getElementById("shbox2").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item2 = 1;
+      }
+      if (m2lval == 1) {
+        $q2 = m2qval;
+        $size2 = "Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+      document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
+      document.getElementById("shbox2").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item2 = 1;
+      }
+      if (m2xlval == 1) {
+        $q2 = m2qval;
+        $size2 = "Extra Large";
+        document.getElementById("nothing").style="display:none";
+        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+      document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
+      document.getElementById("shbox2").style="display:block";
+      document.getElementById("checkbar").style="display:block";
+      document.getElementById("modal2").style="display:none";
+      $item2 = 1;
+      }
+      $price2 = $q2 * m2price;
+      document.getElementById("$price2").innerHTML = "$" + $price2;
+    }
+  }
+  if ($item1 == 0) { //i1 is available
+    if (m2sval == 1) { //add m2 values to i1
+    $q1 = m2qval;
+    $size1 = "Small";
+    document.getElementById("nothing").style="display:none";
+    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+  document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
+  document.getElementById("shbox1").style="display:block";
+  document.getElementById("checkbar").style="display:block";
+  document.getElementById("modal2").style="display:none";
+  $item1 = 1; //i1 is occupied
+  }
+  if (m2mval == 1) {
+    $q1 = m2qval;
+    $size1 = "Medium";
+    document.getElementById("nothing").style="display:none";
+    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+  document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
+  document.getElementById("shbox1").style="display:block";
+  document.getElementById("checkbar").style="display:block";
+  document.getElementById("modal2").style="display:none";
+  $item1 = 1;
+  }
+  if (m2lval == 1) {
+    $q1 = m2qval;
+    $size1 = "Large";
+    document.getElementById("nothing").style="display:none";
+    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+  document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
+  document.getElementById("shbox1").style="display:block";
+  document.getElementById("checkbar").style="display:block";
+  document.getElementById("modal2").style="display:none";
+  $item1 = 1;
+  }
+  if (m2xlval == 1) {
+    $q1 = m2qval;
+    $size1 = "Extra Large";
+    document.getElementById("nothing").style="display:none";
+    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+  document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
+  document.getElementById("shbox1").style="display:block";
+  document.getElementById("checkbar").style="display:block";
+  document.getElementById("modal2").style="display:none";
+  $item1 = 1; 
+  }
+  $price1 = $q1 * m2price;
+      document.getElementById("$price1").innerHTML = "$" + $price1;
+  }
+  if (m2sval + m2mval + m2lval + m2xlval == 0) { //if no size is selected: alert
     alert("Please select a size");
   }
   if ($q1 * $item1 + $q2 * $item2 + $q3 * $item3 + $q4 * $item4 + $q5 * $item5 == 1) { //qs only added if their corresponding i is occupied, rest terms == 0 and are not counted
@@ -484,7 +826,7 @@ let checkbar = document.getElementById("checkbar");
 cancel1.onclick = function () {
   $item1 =0;
   shbox1.style ="display: none;";
-  if ($item1 + $item2 + $item3 + $item4 + $item5 == 0) {
+  if ($item1 + $item2 + $item3 + $item4 + $item5 == 0) { //all empty
     nothing.style="display: block;";
     checkbar.style="display: none";
   }

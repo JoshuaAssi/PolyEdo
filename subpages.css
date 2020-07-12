@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .topbox {
@@ -5,6 +12,15 @@
     height: 1000px;
     background-color: black;
     position: relative;
+}
+
+@-webkit-keyframes guitpull {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -110px;
+    }
 }
 
 @keyframes guitpull {
@@ -16,9 +32,12 @@
     }
 }
 #guit {
-    animation: guitpull .7s 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1.8s;
+    -webkit-animation: guitpull .7s 1;
+            animation: guitpull .7s 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s;
 }
 
 .artpic {
@@ -28,6 +47,17 @@
     height: 100%;
     position: relative;
     z-index: 0;
+}
+
+@-webkit-keyframes pullin {
+    0% {
+        opacity: 0;
+        bottom: -8vw;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
 }
 
 @keyframes pullin {
@@ -53,9 +83,12 @@
     background-color: black;
     opacity: 0;
     z-index: 1;
-    animation: pullin .7s 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1.8s;
+    -webkit-animation: pullin .7s 1;
+            animation: pullin .7s 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s;
 }
 .othertitle {
     position: fixed;
@@ -94,13 +127,18 @@
     top: 30px;
     left: 30px;
     z-index: 5;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 .logobutton:hover {
     background-color: white;
-    filter: grayscale(0);
-    box-shadow: 0 0 30px white;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    -webkit-box-shadow: 0 0 30px white;
+            box-shadow: 0 0 30px white;
 }
 
 
@@ -122,13 +160,22 @@
     height: 100%;
 }
 .third {
+    -webkit-transition: 16s;
+    -o-transition: 16s;
     transition: 16s;
-    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
 .third:hover {
-    filter: hue-rotate(720deg);
+    -webkit-filter: hue-rotate(720deg);
+            filter: hue-rotate(720deg);
+    -webkit-transition: 4s;
+    -o-transition: 4s;
     transition: 4s;
-    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
 #third1 {
     width: 100%;
@@ -139,7 +186,8 @@
     background-color: black;
     background-image: url('videowork.JPG');
     background-size: 2000px 1000px;
-    clip-path: polygon(0 25%, 0 0, 100% 0);
+    -webkit-clip-path: polygon(0 25%, 0 0, 100% 0);
+            clip-path: polygon(0 25%, 0 0, 100% 0);
 }
 
 #third2 {
@@ -151,7 +199,8 @@
     background-color: black;
     background-image: url('videowork.JPG');
     background-size: 2000px 1000px;
-    clip-path: polygon(0 25%, 100% 0, 100% 50%);
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 50%);
+            clip-path: polygon(0 25%, 100% 0, 100% 50%);
 }
 
 #third3 {
@@ -163,7 +212,8 @@
     background-color: black;
     background-image: url('videowork.JPG');
     background-size: 2000px 1000px;
-    clip-path: polygon(0 25%, 0 75%, 100% 50%);
+    -webkit-clip-path: polygon(0 25%, 0 75%, 100% 50%);
+            clip-path: polygon(0 25%, 0 75%, 100% 50%);
 }
 #third4 {
     width: 100%;
@@ -174,7 +224,8 @@
     background-color: black;
     background-image: url('videowork.JPG');
     background-size: 2000px 1000px;
-    clip-path: polygon(100% 100%, 0 75%, 100% 50%);
+    -webkit-clip-path: polygon(100% 100%, 0 75%, 100% 50%);
+            clip-path: polygon(100% 100%, 0 75%, 100% 50%);
 }
 #third5 {
     width: 100%;
@@ -183,7 +234,8 @@
     top: 0;
     left: 0;
     background-color: black;
-    clip-path: polygon(0 75%, 100% 90%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 75%, 100% 90%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 75%, 100% 90%, 100% 100%, 0% 100%);
 }
 .youthird {
     position: relative;
@@ -191,9 +243,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(73% 86%, 100% 90%, 100% 100%, 70% 100%);
+    -webkit-clip-path: polygon(73% 86%, 100% 90%, 100% 100%, 70% 100%);
+            clip-path: polygon(73% 86%, 100% 90%, 100% 100%, 70% 100%);
     background-color: rgb(31, 31, 31);
     overflow: visible;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .youthird:hover {

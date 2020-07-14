@@ -25,13 +25,13 @@
     let shbtn = document.getElementById("shcart");
     
     // Get the Xs
-    /*let closer1 = document.getElementsByClassName("close")[0];
+    let closer1 = document.getElementsByClassName("close")[0];
     let closer2 = document.getElementsByClassName("close")[1];
     let closer3 = document.getElementsByClassName("close")[2];
     let closer4 = document.getElementsByClassName("close")[3];
     let closer5 = document.getElementsByClassName("close")[4];
     let closer6 = document.getElementsByClassName("close")[5];
-    let shcloser = document.getElementsByClassName("close")[6]; */
+    let shcloser = document.getElementsByClassName("close")[6];
 
     // When the user clicks the button, open the modal 
     btn1.onclick = function() {
@@ -58,7 +58,7 @@
 
 
     // When the user clicks on <span> (x), close the modal
-    /*closer1.onclick = function() {
+    closer1.onclick = function() {
       modal1.style.display = "none";
     }
     closer2.onclick = function() {
@@ -79,7 +79,6 @@
 shcloser.onclick = function() {
   shmodal.style.display = "none";
 }
-*/
     
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {

@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
@@ -58,8 +52,8 @@ a {
 
 .body1{
     opacity: 1;
-    -webkit-animation: body1 2.8s 1;
-            animation: body1 2.8s 1;
+    /*-webkit-animation: body1 2.8s 1;
+            animation: body1 2.8s 1;*/
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
@@ -351,6 +345,7 @@ a {
     z-index: 5;
     -webkit-box-shadow: 0 0 5px #888;
             box-shadow: 0 0 5px #888;
+            overflow: hidden;
   }
 
   
@@ -395,7 +390,12 @@ a {
     background-color: #a2cef3;
     z-index: 4;
   }
-
+#postedname {
+    font-size: 13vh;
+    position: absolute;
+    left: -.9vw;
+    letter-spacing: -.6em;
+}
 
   .brshcart {
     bottom: 0;
@@ -461,7 +461,7 @@ a {
     font-size: 4.2vh;
     line-height: 1.25em;
     color: black;
-    
+    left: 20px;
 }
 .headert {
     width: 200px;
@@ -480,9 +480,14 @@ a {
     font-size: 2.3vh;
     font-family: Bowlby One SC;
     border-left: 1px solid #888;
+    overflow: hidden;
+}
+.qtyboxlabel {
+    position: relative;
+    top: 0px;
 }
 .qupb {
-    top: -40px;
+    top: -5px;
     position: relative;
     border: none;
     background-color: #f3f49e;
@@ -494,12 +499,12 @@ a {
 }
 
 .qnum {
-    top: -70px;
+    top: -35px;
     position: relative;
     font-size: 3vh;
 }
 .qdownb {
-    top: -100px;
+    top: -65px;
     position: relative;
     border: none;
     background-color: #f3f49e;
@@ -557,7 +562,8 @@ button:focus {
     position: relative;
     margin: 0 1vh 1vh 1vh;
     width: 97.5%;
-    height:12vh;
+    height: 12vh;
+    text-align: left;
     display: none;
 }
 .itemcancel {
@@ -571,7 +577,6 @@ button:focus {
     cursor: pointer;
 }
 
-
 #nothing {
     position: relative;
     font-size: 2.5vh;
@@ -579,11 +584,13 @@ button:focus {
     margin: 0 0 0 0;
     color: black;
     top: 2vh;
-    left: 21vh;
+    text-align: center;
 }
 #shmodal-content {
     padding: 0 0 0 0;
     height: auto;
+    width: 900px;
+    text-align: center;
 }
 #checkbar {
     position:relative;
@@ -695,7 +702,7 @@ button:focus {
     top: -20vw;
     background-color: #a2cef3;
     opacity: 1;
-    z-index: 5;
+    z-index: 1;
     display: none;
     overflow: hidden;
 }
@@ -703,7 +710,7 @@ button:focus {
     background-color: #f3f49e;
     -webkit-clip-path: polygon(0 29.5%, 66.7% 56.17%, 66.7% 57.17%, 0 30.5%);
             clip-path: polygon(0 29.5%, 66.7% 56.17%, 66.7% 57.17%, 0 30.5%);
-    z-index: 6;
+    z-index: 2;
     top: -70vw;
     margin-bottom: -100vw;
 }
@@ -711,38 +718,11 @@ button:focus {
     background-color: #ff6666;
     -webkit-clip-path: polygon(0 29.5%, 33.3% 42.83%, 33.3% 43.83%, 0 30.5%);
             clip-path: polygon(0 29.5%, 33.3% 42.83%, 33.3% 43.83%, 0 30.5%);
-    z-index: 7;
+    z-index: 3;
     top: -70vw;
     margin-bottom: -100vw;
 }
-/*.phonestripe {
-    width: 100%;
-    height: 160px;
-    background-color: #a2cef3;
-    position: relative;
-    margin: -80px 0 -80px 0;
-    z-index: 2;
-    clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
-    text-align: center;
-    overflow: hidden;
-    opacity: 1;
-    display: none;
-}
-.stripetext {
-    font-family: Bowlby One SC;
-    font-size: 8.8vw;
-    font-size: 20vw;
-    transform: rotate(-7.4deg);
-    transform: rotate(-11deg);
-    position: absolute;
-    left: 2vw;
-    left: -.1vw;
-    bottom: -3.8vh;
-    bottom: -8.5vh;
-    opacity: 1;
-    z-index: 4;
-    color: #ff6666
-}*/
+
 #blogo {
     left: 10px;
 }
@@ -778,6 +758,73 @@ button:focus {
     .himg {
         width: 50%;
     }
+    .modal-content {
+        height: 87vw;
+        width: 87vw;
+    }
+    .sizeb {
+        font-size: 7vw;
+    }
+    .qtybox {
+        font-size: 2.3vw;
+    }
+    .qtyboxlabel {
+        top: .6vw;
+    }
+    .qupb {
+        font-size: 3vw;
+        top: 0;
+    }
+    .qnum {
+        font-size: 3vw;
+        top: -3.2vw;
+    }
+    .qdownb {
+        font-size: 3vw;
+        top: -6.5vw;
+    }
+    .sidename {
+        font-size: 9.8vw;
+    }
+    #postedname {
+        font-size: 13vw;
+        left: -1vh;
+    }
+    .atc {
+        font-size: 4.2vw;
+        left: 2.2vw;
+    }
+    #shmodal-content {
+        width: 87vw;
+    }
+    #chead {
+        font-size: 6vw;
+    }
+    #nothing {
+        font-size: 2.5vw;
+    }
+    .itemhead {
+        font-size: 3vw;
+    }
+    .itemqline {
+        font-size: 3vw;
+    }
+    #totalitems {
+        font-size: 3vw;
+        left: 4vw;
+        top: 1.5vw;
+    }
+    #totalprice {
+        font-size: 2.7vw;
+        top: 1.5vw;
+        right: 1.5vw;
+    }
+    #checkbar {
+        height: 6vw;
+    }
+    #checkbutton {
+        font-size: 3vw;
+    }
     /*#trapcontainer {
         height: 400px;
     }
@@ -809,6 +856,12 @@ button:focus {
         -webkit-clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%, 70% 50%);
                 clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%, 70% 50%);
     }
+    .itemhead {
+        font-size: 4vw;
+    }
+    .itemqline {
+        font-size: 4vw;
+    }
 }
 @media only screen and (max-width: 420px) { /* widest phone (6/7/8 plus)*/
     .topbar {
@@ -817,6 +870,9 @@ button:focus {
     .headert {
         width: 150px;
         height: 41.25px;
+    }
+    .modal-content {
+        top: 20vh;
     }
     .body1 {
         height: 100vh;
@@ -834,9 +890,6 @@ button:focus {
     }
     #trapcontainer {
         display: none;
-    }
-    .modal-content {
-        width: 100%;
     }
     .plogobar {
         height: 40px;
@@ -878,6 +931,16 @@ button:focus {
     }
     .EDO {
         top: 45%;
+    }
+    .itemhead {
+        max-width: 120px;
+        font-size: 4vw;
+    }
+    .itemqline {
+        font-size: 4vw;
+    }
+    #shmodal-content {
+        top: 40px;
     }
     @-webkit-keyframes colorpulse1 {
         0% {

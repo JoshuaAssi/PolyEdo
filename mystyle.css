@@ -1,5 +1,4 @@
 
-
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
 @import url("https://fonts.googleapis.com/css?family=Muli");
 a {
@@ -551,8 +550,6 @@ button:focus {
     bottom: 1vh;
     font-style: italic;
 }
-
-
 .shpic {
     position: relative;
     height: 12vh;
@@ -565,7 +562,8 @@ button:focus {
 .shbox {
     background-color: #a2cef3;
     position: relative;
-    margin: 0 1vh 1vh 1vh;
+    margin: auto;
+    margin-bottom: 1vh;
     width: 97.5%;
     height: 12vh;
     text-align: left;

@@ -51,8 +51,8 @@ a {
 
 .body1{
     opacity: 1;
-    -webkit-animation: body1 2.8s 1;
-            animation: body1 2.8s 1;
+    /*-webkit-animation: body1 2.8s 1;
+            animation: body1 2.8s 1;*/
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
@@ -225,7 +225,6 @@ a {
     -o-transition: .1s;
     transition: .1s;
 }
-
 #smimg1:hover {
     background-color: red;
     -webkit-box-shadow: 0 0 20px #ff2222;
@@ -644,7 +643,7 @@ button:focus {
 .btitlespacer {
     overflow: hidden;
     height: 80px;
-    width: 100%;
+    width: 70%;
     bottom: 0;
     position: absolute;
     left: 0;
@@ -775,11 +774,11 @@ button:focus {
     }
     .qnum {
         font-size: 3vw;
-        top: -3.2vw;
+        top: -4vw;
     }
     .qdownb {
         font-size: 3vw;
-        top: -6.5vw;
+        top: -8.5vw;
     }
     .sidename {
         font-size: 9.8vw;
@@ -862,6 +861,15 @@ button:focus {
     }
 }
 @media only screen and (max-width: 420px) { /* widest phone (6/7/8 plus)*/
+    .sizeb:hover {
+        color: black;
+    }
+    .qupb:hover {
+        opacity: 1;
+    }
+    .qdownb:hover {
+        opacity: 1;
+    }
     .close {
         display: block;
     }
@@ -942,6 +950,12 @@ button:focus {
     }
     #shmodal-content {
         top: 40px;
+    }
+    .atc {
+        display: none;
+    }
+    .brincart {
+        opacity: 1;
     }
     @-webkit-keyframes colorpulse1 {
         0% {

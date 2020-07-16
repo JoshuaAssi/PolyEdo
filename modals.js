@@ -298,6 +298,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic5").src="urv1.png";
       $item5 = 1;
       }
       if (m1mval == 1) {
@@ -309,6 +310,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic5").src="urv1.png";
       $item5 = 1;
       }
       if (m1lval == 1) {
@@ -320,6 +322,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic5").src="urv1.png";
       $item5 = 1;
       }
       if (m1xlval == 1) {
@@ -331,6 +334,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic5").src="urv1.png";
       $item5 = 1;
       }
       $price5 = $q5 * m1price;
@@ -348,6 +352,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic4").src="urv1.png";
       $item4 = 1;
       }
       if (m1mval == 1) {
@@ -359,6 +364,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic4").src="urv1.png";
       $item4 = 1;
       }
       if (m1lval == 1) {
@@ -370,6 +376,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic4").src="urv1.png";
       $item4 = 1;
       }
       if (m1xlval == 1) {
@@ -381,6 +388,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic4").src="urv1.png";
       $item4 = 1;
       }
       $price4 = $q4 * m1price;
@@ -398,6 +406,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic3").src="urv1.png";
       $item3 = 1;
       }
       if (m1mval == 1) {
@@ -409,6 +418,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic3").src="urv1.png";
       $item3 = 1;
       }
       if (m1lval == 1) {
@@ -420,6 +430,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic3").src="urv1.png";
       $item3 = 1;
       }
       if (m1xlval == 1) {
@@ -431,6 +442,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic3").src="urv1.png";
       $item3 = 1;
       }
       $price3 = $q3 * m1price;
@@ -448,6 +460,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic2").src="urv1.png";
       $item2 = 1;
       }
       if (m1mval == 1) {
@@ -459,6 +472,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic2").src="urv1.png";
       $item2 = 1;
       }
       if (m1lval == 1) {
@@ -470,6 +484,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic2").src="urv1.png";
       $item2 = 1;
       }
       if (m1xlval == 1) {
@@ -481,6 +496,7 @@ m1shcart.onclick = function() {
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal1").style="display:none";
+      document.getElementById("shpic2").src="urv1.png";
       $item2 = 1;
       }
       $price2 = $q2 * m1price;
@@ -497,6 +513,7 @@ m1shcart.onclick = function() {
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal1").style="display:none";
+  document.getElementById("shpic1").src="urv1.png";
   $item1 = 1; //m1 is occupied
   }
   if (m1mval == 1) {
@@ -508,6 +525,7 @@ m1shcart.onclick = function() {
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal1").style="display:none";
+  document.getElementById("shpic1").src="urv1.png";
   $item1 = 1;
   }
   if (m1lval == 1) {
@@ -519,6 +537,7 @@ m1shcart.onclick = function() {
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal1").style="display:none";
+  document.getElementById("shpic1").src="urv1.png";
   $item1 = 1;
   }
   if (m1xlval == 1) {
@@ -530,6 +549,7 @@ m1shcart.onclick = function() {
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal1").style="display:none";
+  document.getElementById("shpic1").src="urv1.png";
   $item1 = 1; 
   }
   $price1 = $q1 * m1price;
@@ -559,44 +579,48 @@ m2shcart.onclick = function() {
         $q5 = m2qval;
         $size5 = "Small";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+        document.getElementById("item5size").innerHTML = "Posted -" + " " + $size5;
       document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic5").src="samArtist.png";
       $item5 = 1;
       }
       if (m2mval == 1) {
         $q5 = m2qval;
         $size5 = "Medium";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+        document.getElementById("item5size").innerHTML = "Posted -" + " " + $size5;
       document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic5").src="samArtist.png";
       $item5 = 1;
       }
       if (m2lval == 1) {
         $q5 = m2qval;
         $size5 = "Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+        document.getElementById("item5size").innerHTML = "Posted -" + " " + $size5;
       document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic5").src="samArtist.png";
       $item5 = 1;
       }
       if (m2xlval == 1) {
         $q5 = m2qval;
         $size5 = "Extra Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item5size").innerHTML = "WoahVish -" + " " + $size5;
+        document.getElementById("item5size").innerHTML = "Posted -" + " " + $size5;
       document.getElementById("item5q").innerHTML ="Quantity:" + " " + $q5;
       document.getElementById("shbox5").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic5").src="samArtist.png";
       $item5 = 1;
       }
       $price5 = $q5 * m2price;
@@ -609,44 +633,48 @@ m2shcart.onclick = function() {
         $q4 = m2qval;
         $size4 = "Small";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+        document.getElementById("item4size").innerHTML = "Posted -" + " " + $size4;
       document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic4").src="samArtist.png";
       $item4 = 1;
       }
       if (m2mval == 1) {
         $q4 = m2qval;
         $size4 = "Medium";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+        document.getElementById("item4size").innerHTML = "Posted -" + " " + $size4;
       document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic4").src="samArtist.png";
       $item4 = 1;
       }
       if (m2lval == 1) {
         $q4 = m2qval;
         $size4 = "Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+        document.getElementById("item4size").innerHTML = "Posted -" + " " + $size4;
       document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic4").src="samArtist.png";
       $item4 = 1;
       }
       if (m2xlval == 1) {
         $q4 = m2qval;
         $size4 = "Extra Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item4size").innerHTML = "WoahVish -" + " " + $size4;
+        document.getElementById("item4size").innerHTML = "Posted -" + " " + $size4;
       document.getElementById("item4q").innerHTML ="Quantity:" + " " + $q4;
       document.getElementById("shbox4").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic4").src="samArtist.png";
       $item4 = 1;
       }
       $price4 = $q4 * m2price;
@@ -659,44 +687,48 @@ m2shcart.onclick = function() {
         $q3 = m2qval;
         $size3 = "Small";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+        document.getElementById("item3size").innerHTML = "Posted -" + " " + $size3;
       document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic3").src="samArtist.png";
       $item3 = 1;
       }
       if (m2mval == 1) {
         $q3 = m2qval;
         $size3 = "Medium";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+        document.getElementById("item3size").innerHTML = "Posted -" + " " + $size3;
       document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic3").src="samArtist.png";
       $item3 = 1;
       }
       if (m2lval == 1) {
         $q3 = m2qval;
         $size3 = "Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+        document.getElementById("item3size").innerHTML = "Posted -" + " " + $size3;
       document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic3").src="samArtist.png";
       $item3 = 1;
       }
       if (m2xlval == 1) {
         $q3 = m2qval;
         $size3 = "Extra Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item3size").innerHTML = "WoahVish -" + " " + $size3;
+        document.getElementById("item3size").innerHTML = "Posted -" + " " + $size3;
       document.getElementById("item3q").innerHTML ="Quantity:" + " " + $q3;
       document.getElementById("shbox3").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic3").src="samArtist.png";
       $item3 = 1;
       }
       $price3 = $q3 * m2price;
@@ -709,44 +741,48 @@ m2shcart.onclick = function() {
         $q2 = m2qval;
         $size2 = "Small";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+        document.getElementById("item2size").innerHTML = "Posted -" + " " + $size2;
       document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic2").src="samArtist.png";
       $item2 = 1;
       }
       if (m2mval == 1) {
         $q2 = m2qval;
         $size2 = "Medium";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+        document.getElementById("item2size").innerHTML = "Posted -" + " " + $size2;
       document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic2").src="samArtist.png";
       $item2 = 1;
       }
       if (m2lval == 1) {
         $q2 = m2qval;
         $size2 = "Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+        document.getElementById("item2size").innerHTML = "Posted -" + " " + $size2;
       document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic2").src="samArtist.png";
       $item2 = 1;
       }
       if (m2xlval == 1) {
         $q2 = m2qval;
         $size2 = "Extra Large";
         document.getElementById("nothing").style="display:none";
-        document.getElementById("item2size").innerHTML = "WoahVish -" + " " + $size2;
+        document.getElementById("item2size").innerHTML = "Posted -" + " " + $size2;
       document.getElementById("item2q").innerHTML ="Quantity:" + " " + $q2;
       document.getElementById("shbox2").style="display:block";
       document.getElementById("checkbar").style="display:block";
       document.getElementById("modal2").style="display:none";
+      document.getElementById("shpic2").src="samArtist.png";
       $item2 = 1;
       }
       $price2 = $q2 * m2price;
@@ -758,44 +794,48 @@ m2shcart.onclick = function() {
     $q1 = m2qval;
     $size1 = "Small";
     document.getElementById("nothing").style="display:none";
-    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+    document.getElementById("item1size").innerHTML = "Posted -" + " " + $size1;
   document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal2").style="display:none";
+  document.getElementById("shpic1").src="samArtist.png";
   $item1 = 1; //i1 is occupied
   }
   if (m2mval == 1) {
     $q1 = m2qval;
     $size1 = "Medium";
     document.getElementById("nothing").style="display:none";
-    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+    document.getElementById("item1size").innerHTML = "Posted -" + " " + $size1;
   document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal2").style="display:none";
+  document.getElementById("shpic1").src="samArtist.png";
   $item1 = 1;
   }
   if (m2lval == 1) {
     $q1 = m2qval;
     $size1 = "Large";
     document.getElementById("nothing").style="display:none";
-    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+    document.getElementById("item1size").innerHTML = "Posted -" + " " + $size1;
   document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal2").style="display:none";
+  document.getElementById("shpic1").src="samArtist.png";
   $item1 = 1;
   }
   if (m2xlval == 1) {
     $q1 = m2qval;
     $size1 = "Extra Large";
     document.getElementById("nothing").style="display:none";
-    document.getElementById("item1size").innerHTML = "WoahVish -" + " " + $size1;
+    document.getElementById("item1size").innerHTML = "Posted -" + " " + $size1;
   document.getElementById("item1q").innerHTML ="Quantity:" + " " + $q1;
   document.getElementById("shbox1").style="display:block";
   document.getElementById("checkbar").style="display:block";
   document.getElementById("modal2").style="display:none";
+  document.getElementById("shpic1").src="samArtist.png";
   $item1 = 1; 
   }
   $price1 = $q1 * m2price;

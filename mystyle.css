@@ -521,7 +521,12 @@ button {
 button:focus {
     outline: none;
 }
-
+#m1sbutton {
+    border-left: none;
+}
+#m2sbutton {
+    border-left: none;
+}
 
 #chead {
     position: relative;
@@ -887,7 +892,7 @@ button:focus {
         height: 41.25px;
     }
     .modal-content {
-        top: 20vh;
+        top: 15vh;
     }
     .body1 {
         height: 100vh;

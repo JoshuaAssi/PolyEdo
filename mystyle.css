@@ -72,6 +72,7 @@ button {
             animation: fadein .7s 1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    display:none;
 }
 
 

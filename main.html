@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="mystyle.css" rel="stylesheet">
+    <link rel="icon" href="favi.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>PolyEdo</title>
+</head>
+
+<body class="allb">
+    <!--<div class="boner"></div>-->
+<div id="openerbox">
+    <span class="POLY">POLY</span>
+    <span class="EDO">EDO</span>
+</div>
+<div class="body1">
+    <div class="topbar">
+        <img src="headert.png" alt="polyedo" class="headert">
+        <img src="shcart.png" alt="Shopping Cart" id="shcart">
+    </div>
+    <div style="position:relative;" id="trapcontainer">
+        <a href="Artists.html"><div id="ltrap"></div></a><!--
+        --><a href="VideoProduction.html"><div id="rtrap"></div></a>
+        <h1 style="bottom:0px;margin: 0 0 0 0;font-size:5vw;left:10px;color:white;position:absolute;font-family:'Bowlby One SC';z-index:2;">Artists</h1>
+        <h1 style="top:0px;margin: 0 0 0 0;font-size:5vw;right:10px;color:white;position:absolute;z-index:3;font-family:'Bowlby One SC'">Video Production</h1>
+    </div>
+    <a href="Artists.html"> 
+        <div class="phonebox">
+            <span class="phboxtext">
+                <u>Artists</u> &raquo;
+            </span>
+        </div>
+    </a>
+    <div class="phonestripe" id="ph1"></div>
+    <div class="phonestripe" id="ph2"></div>
+    <div class="phonestripe" id="ph3"></div>
+    <a href="VideoProduction.html">
+        <div class="phonebox" id="phonebox2">
+            <span class="phboxtext" id="pbtext2" style="bottom: 0;left: 3vw;">
+                <u>Production</u> &raquo;
+            </span>
+        </div>
+    </a>
+    <div class="plogobar">
+        <img src="plogo.png" alt="polyedo logo" class="plogo">
+    </div>
+    <div class="container" style="line-height: 0px;">
+        <img src="urv1.png" alt="polo" class="himg" id="him1"><!--
+        --><img src="samArtist.png" alt="polo" class="himg" id="him2"><!--
+        --><img src="urv1.png" alt="polo" class="himg" id="him3"><!--
+        --><img src="urv1.png" alt="polo" class="himg" id="him4"><!--
+        --><img src="urv1.png" alt="polo" class="himg" id="him5"><!--
+        --><img src="urv1.png" alt="polo" class="himg" id="him6">
+    </div>
+    <!--<div style="background-color: #a2cef3;width:100%; margin: 0 0 0 0;height: 60px;text-align:center;position:relative;">
+        <img src="plogo.png" alt="polyedo logo" style="border-radius: 50%;position:relative;height: 49px;width:49px;top: 9%;">
+    </div>-->
+    <footer class="bottombar">
+        <a href="https://www.youtube.com/channel/UCYkBz1xXhDemk4vol0klOUg">
+            <img src="youc.png" alt="youtube" class="smimg" id="smimg1">
+        </a>
+        <a href="https://www.instagram.com/poly3do/?hl=en">
+            <img src="instac.png" alt="instagram" class="smimg" id="smimg2">
+        </a>
+        <a href="https://twitter.com/poly3do">
+            <img src="twitc.png" alt="twitter" class="smimg" id="smimg3">
+        </a>
+    </footer>
+    <footer class="bottombar" id="btitlebar">
+        <img src="plogo.png" alt="polyedo logo" class="plogo" id="blogo">
+        <div class="btitlespacer">
+            <span class="btitle">
+                Poly<span style="color: #f3f49e">Edo</span>
+            </span>
+        </div>
+    </footer>
+    <footer class="bottombar" id="bredbar">
+    </footer>
+    <footer class="bottombar" id="byellowbar">
+    </footer>
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="urv1.png" class="innerpic" alt="WoahVish">
+            <div class="sidename">WoahVish</div>
+            <div class="brshcart">
+                <span class="atc">Add<br>To<br>Cart</span>
+                <img src="incart.png" alt="shopping cart" class="brincart" title="Add To Cart" id="m1shcart">
+            </div>
+            <div style="bottom: 0;left:0;height:17%;width:83%;background-color:#f3f49e;position:absolute;text-align:center;">
+                <button class="sizeb" id="m1sbutton"><span style="position:relative;">S</span>
+                </button><!--
+                --><button class="sizeb" id="m1mbutton"><span style="position:relative;">M</span></button><!--
+                --><button class="sizeb" id="m1lbutton"><span style="position:relative;">L</span></button><!--
+                --><button class="sizeb" id="m1xlbutton"><span style="position:relative;">XL</span></button><!--
+                --><button class="sizeb" id="m1ebutton">B</button>
+            <div class="qtybox">
+                <span class="qtyboxlabel">Quantity:</span>
+                <button class="qupb" id="m1qupb">
+                    &#9650;
+                </button>
+                <p class="qnum" id="m1qnum">1</p>
+                <button class="qdownb" id="m1qdownb">
+                    &#9660;
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="samArtist.png" class="innerpic" alt="WoahVish">
+            <div class="sidename"><span id="postedname">Posted</span></div>
+            <div class="brshcart">
+                <span class="atc">Add<br>To<br>Cart</span>
+                <img src="incart.png" alt="shopping cart" class="brincart" title="Add To Cart" id="m2shcart">
+            </div>
+            <div style="bottom: 0;left:0;height:17%;width:83%;background-color:#f3f49e;position:absolute;text-align:center;">
+                <button class="sizeb" id="m2sbutton"><span style="position:relative;">S</span></button><!--
+                --><button class="sizeb" id="m2mbutton"><span style="position:relative;">M</span></button><!--
+                --><button class="sizeb" id="m2lbutton"><span style="position:relative;">L</span>
+                </button><!--
+                --><button class="sizeb" id="m2xlbutton"><span style="position:relative;">XL</span></button><!--
+                --><button class="sizeb" id="m2ebutton">B</button>
+            <div class="qtybox">
+                <span class="qtyboxlabel">Quantity:</span>
+                <button class="qupb" id="m2qupb">
+                    &#9650;
+                </button>
+                <p class="qnum" id="m2qnum">1</p>
+                <button class="qdownb" id="m2qdownb">
+                    &#9660;
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="shmodal" class="modal">
+        <div class="modal-content" id="shmodal-content">
+            <span class="close">&times;</span>
+            <h1 id="chead">Your Cart</h1>
+            <span id="nothing">There is Nothing In Your Cart<br><br></span>
+            <div class="shbox" id="shbox1">
+                <img src="urv1.png" alt="m1" class="shpic" id="shpic1">
+                <span class="itemhead" id="item1size"></span>
+                <i><span class="itemqline" id="item1q"></span></i>
+                <span class="itemcancel" id="cancel1">&times;</span>
+                <span class="iprice" id="$price1">$69</span>
+            </div>
+            <div class="shbox" id="shbox2">
+                <img src="urv1.png" alt="m1" class="shpic" id="shpic2">
+                <span class="itemhead" id="item2size"></span>
+                <span class="itemqline" id="item2q"></span>
+                <span class="itemcancel" id="cancel2">&times;</span>
+                <span class="iprice" id="$price2">$69</span>
+            </div>
+            <div class="shbox" id="shbox3">
+                <img src="urv1.png" alt="m1" class="shpic" id="shpic3">
+                <span class="itemhead" id="item3size"></span>
+                <span class="itemqline" id="item3q"></span>
+                <span class="itemcancel" id="cancel3">&times;</span>
+                <span class="iprice" id="$price3">$69</span>
+            </div>
+            <div class="shbox" id="shbox4">
+                <img src="urv1.png" alt="m1" class="shpic" id="shpic4">
+                <span class="itemhead" id="item4size"></span>
+                <span class="itemqline" id="item4q"></span>
+                <span class="itemcancel" id="cancel4">&times;</span>
+                <span class="iprice" id="$price4">$69</span>
+            </div>
+            <div class="shbox" id="shbox5">
+                <img src="urv1.png" alt="m1" class="shpic" id="shpic5">
+                <span class="itemhead" id="item5size"></span>
+                <span class="itemqline" id="item5q"></span>
+                <span class="itemcancel" id="cancel5">&times;</span>
+                <span class="iprice" id="$price5">$69</span>
+            </div>
+            <div id="checkbar">
+                <span id="totalitems">0</span>
+                <span id="totalprice">0</span>
+                <button id="checkbutton">Proceed To Checkout</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<script src="modals.js"></script>
+</body>
+</html>

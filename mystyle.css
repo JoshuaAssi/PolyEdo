@@ -11,55 +11,25 @@ button {
     padding: 0 0 0 0;
     overflow: hidden;
 }
-#openerbox {
-    font-family: Bowlby One SC;
-    color: #ff6666;
+.flasher {
     position: fixed;
-    margin: 0 0 0 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
     font-size: 35vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; /* aligns on vertical for column */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; /* aligns on horizontal for column */
-    z-index: 10;
-    overflow: hidden;
+    font-family: Bowlby One SC;
 }
-.POLY{
+#poly {
+    color: #ff6666;
     opacity: 0;
-    -webkit-animation: flash1 600ms 1;
-            animation: flash1 600ms 1;
-    -webkit-animation-delay: .6s;
-            animation-delay: .6s;
-    position:absolute;
+    left: 0;
+    margin: auto;
 }
-
-.EDO{
-    opacity: 0;
+#edo {
     color: #f3f49e;
-    -webkit-animation: flash2 600ms 1;
-            animation: flash2 600ms 1;
-    -webkit-animation-delay: 1.6s;
-            animation-delay: 1.6s;
-    position:absolute;
+    opacity: 0;
+    left: 50%;
+    margin-left: -38vw;
 }
-
 .body1{
     opacity: 1;
-    -webkit-animation: body1 2.8s 1;
-            animation: body1 2.8s 1;
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
@@ -69,100 +39,16 @@ button {
     overflow-x: hidden;
 }
 
-@-webkit-keyframes flash1 {
-    0%{
-        opacity: 1
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes flash1 {
-    0%{
-        opacity: 1
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes flash2 {
-    0%{
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes flash2 {
-    0%{
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes body1 {
-    0%{
-        opacity: 0;
-    }
-    80%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes body1 {
-    0%{
-        opacity: 0;
-    }
-    80%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 /* colors: lightblue:#a2cef3 red:#ff6666 yellow:#f3f49e green:#9dcc65 orange:#fc9c05 */
 
 .allb {
-    background-color: #a2cef3;
+    background-color: white;
     margin: 0 0 0 0;
-    -webkit-animation: bchange 2.8s 1;
-            animation: bchange 2.8s 1;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
-@-webkit-keyframes bchange {
-    0%{
-        background-color: #a2cef3;
-    }
-    80%{
-        background-color: #a2cef3;
-    }
-    100%{
-        background-color: white;
-    }
-}
-@keyframes bchange {
-    0%{
-        background-color: #a2cef3;
-    }
-    80%{
-        background-color: #a2cef3;
-    }
-    100%{
-        background-color: white;
-    }
-}
+
 
 .topbar {
     background-color: #a2cef3;

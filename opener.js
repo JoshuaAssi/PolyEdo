@@ -4,7 +4,7 @@ function betweener(){
 }
 
 function sendoff() {
-    window.location.replace("index.html")
+    window.location.replace("main.html")
 }
 function after2wait() {
     setTimeout(function(){$('#edo').animate({opacity: "0",}, 250, sendoff());}, 600)

@@ -41,12 +41,37 @@ button {
 
 /* colors: lightblue:#a2cef3 red:#ff6666 yellow:#f3f49e green:#9dcc65 orange:#fc9c05 */
 
+@-webkit-keyframes fadein {
+    0%{
+        opacity: 0;
+        background-color: #a2cef3;
+    }
+    100%{
+        opacity: 1;
+        background-color: white;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        background-color: #a2cef3;
+    }
+    100%{
+        opacity: 1;
+        background-color: white;
+    }
+}
 .allb {
     background-color: white;
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    -webkit-animation: fadein .7s 1;
+            animation: fadein .7s 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 

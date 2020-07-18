@@ -1,9 +1,6 @@
     
     window.onload = function() {
-      setTimeout(function() {
-        document.getElementById("openerbox").style = "display:none;";
-        document.getElementsByClassName("body1")[0].style="overflow-y:auto;";
-      }, 2900)
+      document.getElementsByClassName("allb")[0].style="display:block;";
     };
     
     // Get the modal

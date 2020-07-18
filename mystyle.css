@@ -557,7 +557,7 @@ button:focus {
 .phonebox {
     width: 100%;
     height: 100vw;
-    background-image: url('uja.JPG');
+    background-image: url('uja.jpg');
     background-size: cover;
     background-position: 20% 0;
     position: relative;

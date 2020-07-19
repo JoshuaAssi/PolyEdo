@@ -15,12 +15,13 @@ button {
     position: fixed;
     font-size: 35vw;
     font-family: Bowlby One SC;
+    top: 50%;
+    margin-top: -25vw;
 }
 #poly {
     color: #ff6666;
     opacity: 0;
     left: 0;
-    margin: auto;
 }
 #edo {
     color: #f3f49e;

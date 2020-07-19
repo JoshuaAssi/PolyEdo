@@ -808,7 +808,6 @@ button:focus {
     }
     .body1 {
         height: 100vh;
-        overflow-y: hidden;
     }
     #shcart {
         height: 36px;

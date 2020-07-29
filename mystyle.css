@@ -64,19 +64,58 @@ button {
     }
 }
 .allb {
-    background-color: white;
+    background-color: #a2cef3;
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    -webkit-animation: fadein .7s 1;
-            animation: fadein .7s 1;
+    -webkit-animation: fadein 1.5s 1;
+            animation: fadein 1.5s 1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    display:none;
+    display: none;
 }
-
-
+.merchsoonbox {
+    width: 100%;
+    height: 10vw;
+    font-size: 2.5vw;
+    font-family: Bowlby One SC;
+    color: black;
+    overflow: hidden;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    position: relative;
+}
+#merchtext {
+    height: 4vw;
+    width: 100%;
+    position: absolute;
+    top: 5vw;
+    margin-top: -2vw;
+    text-align: center;
+}
+#emailform {
+    font-size: 2vw;
+    display: inline;
+    position: relative;
+    bottom: .3vw;
+}
+#emailsubb {
+    width: 10vw;
+    height: 2.5vw;
+    font-family: Bowlby One SC;
+    font-size: 1.5vw;
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: #ff6666;
+}
+#emailin {
+    height: 1.8vw;
+    width: 15vw;
+    font-family: Bowlby One SC;
+    font-size: 1.5vw;
+}
 .topbar {
     background-color: #a2cef3;
     position: relative;
@@ -115,14 +154,13 @@ button {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
     background-color: #ff6666;
-    cursor: pointer;
 }
 #him2:hover {
     background-color: #f3f49e;
 }
 
 #him3:hover {
-    background-color: rgb(246, 152, 255);
+    background-color: #a2cef3;
 }
 #him4:hover {
     background-color: #fc9c05;
@@ -131,7 +169,7 @@ button {
     background-color: #9dcc65;
 }
 #him6:hover {
-    background-color: #a2cef3;
+    background-color: rgb(248, 174, 255);
 }
 
 .smimg {
@@ -647,6 +685,12 @@ button:focus {
 #blogo {
     left: 10px;
 }
+.phonebreak {
+    display: none;
+}
+.compspace {
+    display: inline;
+}
 @media only screen and (max-width: 1600px) {
     #bredbar {
         -webkit-clip-path: polygon(73% 0, 54% 0, 55% 50%, 54% 100%, 73% 100%, 74% 50%);
@@ -785,6 +829,36 @@ button:focus {
     }
 }
 @media only screen and (max-width: 420px) { /* widest phone (6/7/8 plus)*/
+    .merchsoonbox {
+        height: 20vw;
+        font-size: 3.9vw;
+        line-height: 2em;
+    }
+    .compspace {
+        display: none;
+    }
+    .phonebreak {
+        display: block;
+    }
+    #emailform {
+        font-size: 4vw;
+    }
+    #emailsubb {
+        border: none;
+        width: 20vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+    #emailin {
+        height: 3.6vw;
+        width: 30vw;
+        font-size: 3vw;
+    }
+    #merchtext {
+        height: 8vw;
+        top: 6vw;
+        margin-top: -4vw;
+    }
     .sizeb:hover {
         color: black;
     }

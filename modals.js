@@ -17,28 +17,6 @@ window.onload = function() {
     }
   }
 
-  /*
-  let emaildropbox = document.getElementsByClassName('merchsoonbox')[0];
-  let signupb = document.getElementById('signupb');
-
-  signupb.onclick = function(){
-    emaildropbox.animate({
-      margin: "0 0 -3vw 0",
-    }, 200)
-  }*/
-
-  /*
-  $("#emailsubb").on("click", function() {
-    message = $("#emailform").serialize();
-    $.ajax({
-        url: "https://formspree.io/xdowyqqz", 
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
-    });
-    alert('Thanks for signing up! Stay tuned');
-    return false;
-}); */
 
 $(document).ready(function() {
   $('#emailform').submit(function() {
